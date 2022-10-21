@@ -44,8 +44,7 @@ CREATE TABLE CREDENCIALES (
   PRIMARY KEY (codigo_cred),
   INDEX ind_credencial_usuario (codigo_cred ASC),
   UNIQUE INDEX uq_identificacion_cred (identificacion_cred ASC),
-  CONSTRAINT chk_evitarPersona 
-    CHECK (codigo_cred NOT LIKE '%person%'),
+ 
   CONSTRAINT fk_credencial_usuario
     FOREIGN KEY (codigo_cred)
     REFERENCES USUARIOS (codigo_user)
