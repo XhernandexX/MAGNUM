@@ -1,5 +1,5 @@
 <?php
-	require_once 'model/DataBase.php';
+	require_once 'model/DataBase.php';	
 	if (!isset($_REQUEST['c'])) {
 		require_once 'controller/LandingPage.php';
 		$controller = new LandingPage;
