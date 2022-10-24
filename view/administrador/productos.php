@@ -337,6 +337,9 @@ $listaProductos=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 </table>
 </div>
 
+    <input type="submit" class="btn btn-secondary"><a href="template/pdf.php">
+    </input></a>
+
 
 
 </main>

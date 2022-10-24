@@ -313,7 +313,7 @@ $listaUsers=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
         <?php } ?>
     </tbody>
 </table>
-</div>
+
 
 
 
