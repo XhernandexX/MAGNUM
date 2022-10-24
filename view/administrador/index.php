@@ -68,6 +68,10 @@ if($_POST){
 							<div class="text-center">
 								<button type="submit" class="btn btn-light">Iniciar Sesión</button>
 							</div>
+<br>
+							<div class="text-center">
+								<button class="btn btn-dark" ><a href="https://magnumshop.herokuapp.com/" >Regresar</button></a>
+							</div>
 						</form>
 			    </div>
 		
