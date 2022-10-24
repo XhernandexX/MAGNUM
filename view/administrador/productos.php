@@ -58,6 +58,15 @@
 
                     <p>
 
+                    <li>
+                <a href="clientes.php" class="nav-link text-white">
+                Clientes
+                </a>
+                </li>
+
+                <p>
+
+
                 <li>
                 <a href="reportes.php" class="nav-link text-white">
                 Reportes
@@ -66,11 +75,7 @@
 
                     <p>
 
-                <li>
-                <a href="soporte.php" class="nav-link text-white">
-                Soporte
-                </a>
-                </li>
+
         </ul>
                     <hr>
 

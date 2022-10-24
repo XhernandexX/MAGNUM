@@ -58,6 +58,14 @@
 
                     <p>
 
+                    <li>
+                <a href="clientes.php" class="nav-link text-white">
+                Clientes
+                </a>
+                </li>
+
+                    <p>
+
                 <li>
                 <a href="reportes.php" class="nav-link text-white">
                 Reportes
@@ -65,18 +73,12 @@
                 </li>
 
                     <p>
-
-                <li>
-                <a href="soporte.php" class="nav-link text-white">
-                Soporte
-                </a>
-                </li>
         </ul>
                     <hr>
 
                 <div class="logout">
   
-                <a class="nav-item nav-link" href="<?php echo $url."/administrador/seccion/cerrar.php";?>">Cerrar Sesión</a>
+                <a class="nav-item nav-link" href="<?php echo $url."../index.php";?>">Cerrar Sesión</a>
  
                 </div>
         </nav> 
