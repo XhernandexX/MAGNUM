@@ -30,7 +30,7 @@
             <a class="nav-link" href="?c=LandingPage&a=productos">PRODUCTOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="?c=Login">LOGIN</a>
+            <a class="nav-link" href="./view/administrador/index.php">LOGIN</a>
           </li>
         </ul>
         <form class="d-flex">

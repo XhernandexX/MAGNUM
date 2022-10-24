@@ -1,8 +1,8 @@
 
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-2">
-
-        <br>
-
+    <div class="chartjs-size-monitor">
+    </div>
+<br>
 <div class="col-md-12">
     <div class="card text-white bg-dark mb-3" >
   <div class="card-header"><?php $rolUsuario; ?></div>

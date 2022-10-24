@@ -10,9 +10,9 @@
 		}
 		# Iniciar Sesión
 		public function loginStart($userDto){
-			$sql = 'SELECT * FROM CREDENCIALES WHERE
-				codigo_cred = :userEmailLog AND
-				pass_cred = sha1(:userPassLog)';
+			$sql = 'SELECT * FROM usuarios WHERE
+				usuario_correo = :userEmailLog AND
+				usuario_pass = sha1(:userPassLog)';
 			$dbh = $this->pdo->prepare($sql);
 			$dbh->bindValue('userEmailLog', $userDto->getEmailUser());
 			$dbh->bindValue('userPassLog', $userDto->getPassUser());
@@ -20,12 +20,14 @@
 			$userDb = $dbh->fetch();
 			if ($userDb) {
 				$userDto = new UserDto(
-					$userDb['codigo_cred'],
-					$userDb['identificacion_cred'],
-					$userDb['fecha_ingreso_cred'],
-					$userDb['pass_cred'],
-					$userDb['estado_cred'],
-
+					$userDb['id_rol'],
+					$userDb['id_usuario'],
+					$userDb['usuario_doc_identidad'],
+					$userDb['usuario_nombres'],
+					$userDb['usuario_apellidos'],
+					$userDb['usuario_correo'],
+					$userDb['usuario_pass'],
+					$userDb['usuario_estado']
 				);
 				return $userDto;
 			} else {
@@ -37,7 +39,7 @@
 		public function create($userDto){
 			try {
 				// Crear la Consulta
-				$sql = 'INSERT INTO CREDENCIALES VALUES (
+				$sql = 'INSERT INTO usuarios VALUES (
 							:idRol,
 							:idUser,
 							:docIdUser,
@@ -64,11 +66,11 @@
 				die($e->getMessage());	
 			}
 		}
-		# Consultar o Listar CREDENCIALES
+		# Consultar o Listar Usuarios
 		public function read(){
 			try {
 				$userList = [];
-				$sql = 'SELECT * FROM CREDENCIALES';
+				$sql = 'SELECT * FROM usuarios';
 				$dbh = $this->pdo->query($sql);
 				foreach ($dbh->fetchAll() as $user) {
 					$userList[] = new UserDto(
@@ -91,7 +93,7 @@
 		public function getById($idUser){
 			try {
 				# Consulta
-				$sql = "SELECT * FROM CREDENCIALES WHERE id_usuario=:id_usuario";
+				$sql = "SELECT * FROM usuarios WHERE id_usuario=:id_usuario";
 				# Preparar la BBDD
 				$dbh = $this->pdo->prepare($sql);
 				# Vincular los datos
@@ -121,7 +123,7 @@
 		public function update($userDto){
 			try {
 				# Consulta
-				$sql = 'UPDATE CREDENCIALES SET
+				$sql = 'UPDATE usuarios SET
 							id_rol = :idRol,
 							usuario_doc_identidad = :docIdUser,
 							usuario_nombres = :nameUser,
@@ -151,7 +153,7 @@
 		# Eliminar Usuario
 		public function delete($idUser){
 			try {
-				$sql = 'DELETE FROM CREDENCIALES WHERE id_usuario = :idUser';
+				$sql = 'DELETE FROM usuarios WHERE id_usuario = :idUser';
 				$dbh = $this->pdo->prepare($sql);
 				$dbh->bindValue('idUser', $idUser);
 				$dbh->execute();

@@ -74,7 +74,7 @@
 
                 <div class="logout">
   
-                <a class="nav-item nav-link" href="<?php echo $url."/administrador/seccion/cerrar.php";?>">Cerrar Sesión</a>
+                <a class="nav-item nav-link" href=".././index.php";>Cerrar Sesión</a>
  
                 </div>
         </nav> 
