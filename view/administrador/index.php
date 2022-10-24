@@ -70,7 +70,7 @@ if($_POST){
 							</div>
 <br>
 							<div class="text-center">
-								<button class="btn btn-dark" ><a href="https://magnumshop.herokuapp.com/" >Regresar</button></a>
+								<button class="btn btn-dark" ><a href="../../index.php" >Regresar</button></a>
 							</div>
 						</form>
 			    </div>
