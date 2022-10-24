@@ -81,7 +81,7 @@
 
                 <div class="logout">
   
-                <a class="nav-item nav-link" href="<?php echo $url."/administrador/seccion/cerrar.php";?>">Cerrar Sesión</a>
+                <a class="nav-item nav-link" href="<?php echo $url."https://magnumshop.herokuapp.com";?>">Cerrar Sesión</a>
  
                 </div>
         </nav> 
@@ -222,7 +222,7 @@ $listaProductos=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
     <div class="col-md-4">
 
         <div class="card text-white bg-dark mb-3">
-        <div class="card-header">Modulo Productos</div>
+        <div class="card-header">Módulo Productos</div>
         <div class="card-body">
         <h2 class="card-title">Productos</h2>
         <p class="card-text">

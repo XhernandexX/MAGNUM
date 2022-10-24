@@ -81,7 +81,7 @@
 
                 <div class="logout">
   
-                <a class="nav-item nav-link" href="<?php echo $url."/administrador/seccion/cerrar.php";?>">Cerrar Sesión</a>
+                <a class="nav-item nav-link" href="<?php echo $url."https://magnumshop.herokuapp.com";?>">Cerrar Sesión</a>
  
                 </div>
         </nav> 

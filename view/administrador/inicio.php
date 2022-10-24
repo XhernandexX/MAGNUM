@@ -81,7 +81,7 @@
 
                 <div class="logout">
   
-                <a class="nav-item nav-link" href="<?php echo $url."/administrador/seccion/cerrar.php";?>">Cerrar Sesión</a>
+                <a class="nav-item nav-link" href="<?php echo $url."https://magnumshop.herokuapp.com";?>">Cerrar Sesión</a>
  
                 </div>
         </nav> 
@@ -97,7 +97,7 @@
   <div class="card-header"><?php $rolUsuario; ?></div>
   <div class="card-body">
     <h2 class="card-title">Bienvenido a nuestro BackOffice <?php $nombreUsuario; ?></h2>
-    <p class="card-text">Recuerda que en este modulo encontraras todo lo que necesitas para administrar tu página
+    <p class="card-text">Recuerda que en este módulo encontraras todo lo que necesitas para administrar tu página
         <p>
         Dependiendo de tu rol podras usar las diferentes opciones que tenemos para ti
     </p>
@@ -109,7 +109,7 @@
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 
         <div class="card border-dark mb-3" style="max-width: 20rem;">
-        <div class="card-header">Modulo Usuarios</div>
+        <div class="card-header">Módulo Usuarios</div>
         <div class="card-body">
         <h4 class="card-title">Usuarios</h4>
         <p class="card-text">
@@ -130,7 +130,7 @@
 
 
         <div class="card border-dark mb-3" style="max-width: 20rem;">
-        <div class="card-header">Modulo Productos</div>
+        <div class="card-header">Módulo Productos</div>
         <div class="card-body">
         <h4 class="card-title">Productos</h4>
         <p class="card-text">
@@ -149,9 +149,28 @@
         </div>
         </div>
 
+        <div class="card border-dark mb-3" style="max-width: 20rem;">
+        <div class="card-header">Módulo Clientes</div>
+        <div class="card-body">
+        <h4 class="card-title">Clientes</h4>
+        <p class="card-text">
+                <a href="clientes.php" class="nav-link text-white">
+                Crear Cliente
+                </a>
+
+                <a href="clientes.php" class="nav-link text-white">
+                Modificar Cliente
+                </a>
+
+                <a href="clientes.php" class="nav-link text-white">
+                Eliminar Cliente
+                </a>
+        </p>
+        </div>
+        </div>
 
         <div class="card border-dark mb-3" style="max-width: 20rem;">
-        <div class="card-header">Modulo Reportes</div>
+        <div class="card-header">Módulo Reportes</div>
         <div class="card-body">
         <h4 class="card-title">Reportes</h4>
         <p class="card-text">
@@ -171,25 +190,7 @@
         </div>
 
 
-        <div class="card border-dark mb-3" style="max-width: 20rem;">
-        <div class="card-header">Soporte Técnico</div>
-        <div class="card-body">
-        <h4 class="card-title">Soporte</h4>
-        <p class="card-text">
-                <a href="soporte.php" class="nav-link text-white">
-                Pago Platarfoma
-                </a>
 
-                <a href="soporte.php" class="nav-link text-white">
-                Servicio Técnico
-                </a>
-
-                <a href="soporte.php" class="nav-link text-white">
-                PQRS
-                </a>
-        </p>
-        </div>
-        </div>
 
 
 </div>

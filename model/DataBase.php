@@ -1,10 +1,14 @@
-<?php 
-	class DataBase{		
-		public function __construct(){}
-		public static function conexion(){
-			$pdo = new PDO('mysql:host=localhost;dbname=proyecto_magnun_bbdd;charset=utf8','root','');
-			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			return $pdo;
-		}
-	}
+<?php
+$host="bq36b1laj9tspvtyfk0a-mysql.services.clever-cloud.com";
+$bd="bq36b1laj9tspvtyfk0a";
+$usuario="uextwwe1soc1adhw";
+$contrasenia="0EyhOqBvwyFjCE7HWZTh";
+
+try {
+        $conexion=new PDO("mysql:host=$host;dbname=$bd",$usuario,$contrasenia);    
+
+} catch   ( Exception $ex) {
+
+    echo $ex->getMessage();
+}
 ?>
